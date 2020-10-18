@@ -5,21 +5,161 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS only -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="/css/style.css">
     <title>Blog on Bootstrap</title>
 </head>
-<body>
-    <header class="container-fluid bg-dark form-inline  py-2">
-        <a href="index.html"><img src="/images/boot_1.png" alt="" class="img-fluid boot"></a>
-        <h2 class="text-primary ">Bootstrap</h2>
+<body class="min-vh-100">
+    <header class="mb-5">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="#">
+                <img src="images/boot_1.png" width="60" height="45" alt=""> Bootstrap
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a href="/index.html" class="nav-link">HOME</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="/newblog.html" class="nav-link ">NEW POST</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="/login.html" class="nav-link ">LOGIN</a>
+                </li>
+                
+              </ul>
+            </div>
+          </nav>
     </header>
-    <section >
+    
 
-    </section>
+    <div class="container scrollable mt-5 pt-5">
+        <section class="mb-4 section" id="section1" class="p-4 border">
+            <div class="d-flex justify-content-between">
+                <h1>Introduction to Bootstrap</h1>
+                <span><i class="fas fa-bookmark text-warning"></i></span>
+            </div>
+            <div class="wrap">
+                <p>Taushik Das</p>
+                <div class=" alert alert-primary"> 
+                    <p class=" text-left">
+                             Looking to quickly add Bootstrap to your project? Use jsDelivr,
+                            a free open source CDN. Using a package manager or need to download the source files?
+                            
+                            CSS
+                            Copy-paste the stylesheet link into your head before all other stylesheets to load our CSS.
+                            
+                            JS
+                            Many of our components require the use of JavaScript to function. Specifically, they require jQuery, Popper.js, and our own JavaScript plugins. We use jQuery’s slim build, but the full version is also supported.
+                            
+                            Place one of the following s near the end of your pages, right before the closing  tag, to enable them. jQuery must come first, then Popper.js, and then our JavaScript plugins.
+                            
+                            Bundle
+                            Include everything you need in one script with our bundle. Our bootstrap.bundle.js and bootstrap.bundle.min.js include Popper, but not jQuery. For more information about what’s included in Bootstrap, please see our contents section.
+                    </p>
+                </div>
+            </div>
+            <div class="form-inliine"><i class="fas fa-thumbs-up m-2 n text-primary like"> </i> <span class="mr-1 ">1</span>  <i class="fas fa-thumbs-down m-2 text-danger dislike"></i><span class="mr-2">2</span></div>
+        </section>
+        <section class="mb-4 section" id="section2 " >
+            <div class="d-flex justify-content-between">
+                <h1>Components</h1>
+                <span><i class="far fa-bookmark text-warning"></i></span>
+            </div>
+            <div class="wrap">
+                <p>Taushik Das</p>
+            </div>
+            <div class=" alert alert-primary">
+                <p class="text-left">
+                    <strong>Components</strong><br> Components and options for laying out your Bootstrap project, including wrapping containers, 
+                    a powerful grid system, a flexible media object, and responsive utility classes.<br>
+                    Bootstrap comes with three different containers:
+                    <ul>
+                        <li>container, which sets a max-width at each responsive breakpoint</li>
+                        <li>container-fluid, which is width: 100% at all breakpoints</li>
+                        <li>container-{breakpoint}, which is width: 100% until the specified breakpoint</li>
+                    </ul>
+                    The table below illustrates how each container’s max-width compares to the original .container and .container-fluid across each breakpoint.
+                </p>
+            </div>
+            <div class="form-inliine"><i class="fas fa-thumbs-up m-2 n text-primary"> <span class="mr-1 like">1</span> </i> <i class="fas fa-thumbs-down m-2 text-danger dislike"><span class="mr-2">2</span></i></div>
+        </section>
+        <section class="mb-4 section" id="section3">
+            <div class="d-flex justify-content-between">
+                <h1>Bootstrap Buttons</h1>
+                <span><i class="far fa-bookmark text-warning"></i></span>
+            </div>
+            <div class="wrap">Taushik Das</div>
+            <div class="alert alert-secondary">
+                <div class="row ">
+                    <img src="images/bootbtn.png" alt="Bootstrap Bunnons" srcset="" class="col-3 p-2 border-right-1 border-primary rounded ">
+                    <div class="col-9 border border-left-primary">
+                        <p>
+                            <strong class="text-primary">Buttons</strong> <br>
+                            Bootstrap includes several predefined button styles, each serving its own semantic purpose, with a few extras thrown in for more control.
+                            <br>
+                            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner" id="carouselContent">
+                                    <div class="carousel-item active">
+                                        <button type="button" class="btn btn-primary">Primary</button>
+                                        <xmp><button type="button" class="btn btn-primary">Primary</button></xmp>
+                                    </div>
+                                    <div class="carousel-item ">
+                                        <button type="button" class="btn btn-secondary">Secondary</button>
+                                        <xmp><button type="button" class="btn btn-secondary">Secondary</button></xmp>
+                                    </div>
+                                    <div class="carousel-item ">
+                                        <button type="button" class="btn btn-danger">Danger</button>
+                                        <xmp><button type="button" class="btn btn-danger">Danger</button></xmp>
+                                    </div>
+                                    <div class="carousel-item ">
+                                        <button type="button" class="btn btn-warning">Warning</button>
+                                        <xmp><button type="button" class="btn btn-warning">Warning</button></xmp>
+                                    </div>
+                                    <div class="carousel-item ">
+                                        <button type="button" class="btn btn-info">Info</button>
+                                        <xmp><button type="button" class="btn btn-info">Info</button></xmp>
+                                    </div>
+                                    <div class="carousel-item ">
+                                        <button type="button" class="btn btn-link">Link</button>
+                                        <xmp><button type="button" class="btn btn-link">Link</button></xmp>
+                                    </div>
+                                    <div class="carousel-item ">
+                                        <button type="button" class="btn btn-dark">Dark</button>
+                                        <xmp><button type="button" class="btn btn-dark">Dark</button></xmp>
+                                    </div>
+                                    <div class="carousel-item ">
+                                        <button type="button" class="btn btn-light">Light</button>
+                                        <xmp><button type="button" class="btn btn-light">Light</button></xmp>
+                                    </div>
+                                </div>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="form-inliine"><i class="fas fa-thumbs-up m-2 n text-primary"> </i> <span class="mr-1 like">1</span>  <i class="fas fa-thumbs-down m-2 text-danger dislike"></i><span class="mr-2">2</span></div>
+    </div>
+    <footer class=" bg-dark">
+        <div class="container d-flex justify-content-center">
+                <div class="form-inline">
+                    
+                    <i class="fab fa-facebook-square fa-2x text-primary p-2  " aria-hidden="true"><span class="sr-only">Facebook</span></i>
+                    <i class="fab fa-youtube-square fa-2x text-danger p-2" aria-hidden="true"><span class="sr-only">Youtube</span></i>
+                    <p class="text-white pt-3"> | &copy; Blog_boot 2019-20 </p>
+                </div>
+            </div>
+        </div>
+    </footer>
     
     <!-- JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
